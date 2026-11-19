@@ -1,0 +1,39 @@
+{
+  "rows": 29298,
+  "date_min": "2006-01-15",
+  "date_max": "2026-10-15",
+  "markets": 227,
+  "commodities": 51,
+  "price_types": {
+    "Retail": 19897,
+    "Wholesale": 9401
+  },
+  "units_top": {
+    "KG": 15609,
+    "90 KG": 4208,
+    "L": 2862,
+    "50 KG": 2022,
+    "200 G": 1460,
+    "500 ML": 842,
+    "Unit": 608,
+    "64 KG": 522,
+    "13 KG": 478,
+    "126 KG": 461,
+    "400 G": 178,
+    "Head": 26
+  },
+  "missing_top": {
+    "admin1": 68,
+    "admin2": 68,
+    "latitude": 68,
+    "longitude": 68,
+    "date": 0,
+    "market": 0,
+    "market_id": 0,
+    "category": 0,
+    "commodity": 0,
+    "commodity_id": 0
+  },
+  "bad_dates": 0,
+  "bad_prices": 0
+}
