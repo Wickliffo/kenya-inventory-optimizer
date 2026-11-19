@@ -1,0 +1,23 @@
+{
+  "model": "ARIMAX",
+  "target": "price_or_demand",
+  "horizon": 6,
+  "diagnostics": {
+    "aic": 1291.4628346554296,
+    "n_obs": 180,
+    "exogenous": [
+      "x_0"
+    ],
+    "order": [
+      1,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      12
+    ]
+  }
+}
