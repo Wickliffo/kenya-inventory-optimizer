@@ -1,0 +1,20 @@
+{
+  "model": "ARIMA",
+  "target": "price_or_demand",
+  "horizon": 6,
+  "diagnostics": {
+    "aic": 1295.6615556597617,
+    "n_obs": 180,
+    "order": [
+      1,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      12
+    ]
+  }
+}
