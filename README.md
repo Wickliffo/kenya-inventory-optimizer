@@ -258,33 +258,26 @@ This distinction is maintained throughout the project to avoid overstating model
 
 ## 📁 Project Structure
 
-```text
-kenyan-supply-replenishment-core/
+kenyan-inventory-optimizer/
 │
 ├── data/
 │   ├── public/
 │   │   └── wfp_food_prices_ken.csv
-│   │
 │   ├── processed/
 │   │   └── core_model/
-│   │
 │   └── optimization_input_template.csv
+│
+├── reports/
+│   └── kenya_data_and_employer_story.md
 │
 ├── scripts/
 │   ├── profile_public_data.py
 │   ├── run_core_models.py
 │   └── run_cvpy_plan.py
 │
-├── docs/
-│   └── ...
-│
-├── tests/
-│   └── ...
-│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```
 
 *The structure above documents the intended repository organization; retain only directories and files that actually exist in your repository.*
 
