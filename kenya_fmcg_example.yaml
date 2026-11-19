@@ -1,0 +1,25 @@
+market: Kenya
+currency: KSh
+planning_horizon_days: 7
+forecast:
+  baseline: seasonal_naive
+  arima_order: [1, 1, 1]
+  seasonal_order: [1, 0, 1, 7]
+  quantiles: [0.5, 0.9]
+  minimum_history_observations: 42
+optimization:
+  objective: procurement_plus_holding_plus_shortage_penalty
+  shortage_penalty_multiplier: 4.0
+  default_holding_rate: 0.015
+  solver: CLARABEL
+  rounding_policy: post_solve_order_multiple_repair
+validation:
+  demand_non_negative: true
+  inventory_non_negative: true
+  lead_time_positive: true
+  duplicate_key: [date, sku_id, location_id]
+public_context:
+  price_source: WFP Kenya Food Prices / HDX
+  market_source: KAMIS
+  macro_source: KNBS Leading Economic Indicators
+  weather_source: Kenya Meteorological Department
