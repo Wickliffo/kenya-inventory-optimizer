@@ -168,51 +168,48 @@ The objective is to balance inventory holding costs against shortage penalties w
 
 Conceptually:
 
-\[
-\min \quad
-\text{Holding Cost}+\text{Shortage Penalty}
-\]
+$$
+\min \quad \text{Holding Cost} + \text{Shortage Penalty}
+$$
 
 Subject to:
 
-\[
-\text{Purchasing Spend}\leq \text{Budget}
-\]
+$$
+\text{Purchasing Spend} \leq \text{Budget}
+$$
 
-\[
-0\leq Q_i\leq \text{Supplier Capacity}_i
-\]
+$$
+0 \leq Q_i \leq \text{Supplier Capacity}_i
+$$
 
-\[
-\text{Ending Inventory}_i\leq \text{Storage Capacity}_i
-\]
+$$
+\text{Ending Inventory}_i \leq \text{Storage Capacity}_i
+$$
 
-\[
+$$
 Q_i \geq 0
-\]
+$$
 
 Where:
 
-- \(Q_i\) represents the purchasing quantity for SKU \(i\).
+- $Q_i$ represents the purchasing quantity for SKU $i$.
 - Inventory position represents available inventory after accounting for relevant stock movements and outstanding orders.
 - Demand scenarios represent different levels of expected demand.
 
 ### Order Multiples
 
-Where supported by the model configuration, purchasing quantities are constrained to supplier-defined order multiples.
-
-For example, a supplier may require purchasing in cartons of 12 units rather than individual units.
+Where supported by the model configuration, purchasing quantities are constrained to supplier-defined order multiples. For example, a supplier may require purchasing in cartons of 12 units rather than individual units.
 
 The integer decision variable can be represented as:
 
-\[
-Q_i=M_iZ_i
-\]
+$$
+Q_i = M_i Z_i
+$$
 
 Where:
 
-- \(M_i\) is the supplier order multiple.
-- \(Z_i\) is a non-negative integer decision variable.
+- $M_i$ is the supplier order multiple.
+- $Z_i$ is a non-negative integer decision variable.
 
 CVXPY uses the HiGHS solver when available to solve the resulting mixed-integer optimization problem.
 
