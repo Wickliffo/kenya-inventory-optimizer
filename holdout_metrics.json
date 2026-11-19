@@ -1,0 +1,44 @@
+{
+  "market": "Nairobi",
+  "target": "Oil (vegetable)",
+  "exogenous": "Bread",
+  "price_type": "Retail",
+  "observations": 180,
+  "holdout_months": 6,
+  "arima_wape_pct": 23.129188431022765,
+  "arimax_wape_pct": 23.62160246698401,
+  "arima_diagnostics": {
+    "aic": 1239.8307691669752,
+    "n_obs": 174,
+    "order": [
+      1,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      12
+    ]
+  },
+  "arimax_diagnostics": {
+    "aic": 1236.8978004899036,
+    "n_obs": 174,
+    "exogenous": [
+      "x_0"
+    ],
+    "order": [
+      1,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      12
+    ]
+  },
+  "interpretation": "This is a public market-price forecasting demonstration. It is not company demand accuracy."
+}
