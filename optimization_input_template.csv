@@ -1,0 +1,1 @@
+sku_id,location_id,p50_demand,p90_demand,inventory_position,unit_cost_ksh,storage_capacity,supplier_capacity,order_multiple,holding_cost_ksh,shortage_penalty_ksh
